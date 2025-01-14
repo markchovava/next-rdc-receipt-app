@@ -3,12 +3,10 @@ import React from 'react'
 import SidebarNav from './SidebarNav'
 import Link from 'next/link'
 import Image from 'next/image'
-import { profileViewAction } from '@/actions/profileActions';
 
 
 
-export default async function Sidebar() {
-  const authData = await Promise.all([ profileViewAction() ]);
+export default async function Sidebar({ authData }) {
   
   return (
     <div className='text-white h-[100vh] overflow-auto scroll__width'>

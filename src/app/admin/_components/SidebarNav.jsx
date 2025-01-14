@@ -244,6 +244,7 @@ export default function SidebarNav({ authData }) {
                                 <FaAngleRight /> AppInfo </Link>
                         </motion.li>
                         {auth?.role?.level <= 3 &&
+                        <>
                         <motion.li 
                             variants={liVariant}
                             initial='start'
@@ -252,6 +253,7 @@ export default function SidebarNav({ authData }) {
                             <Link href='/admin/role'className={` flex items-center justify-start gap-1`}>
                             <FaAngleRight /> Roles List </Link>
                         </motion.li>
+                        </>
                         }
                        
                     </motion.ul>

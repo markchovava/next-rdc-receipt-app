@@ -80,8 +80,10 @@ export default function Register() {
     <section className='w-[100%] py-[7rem]'>
         <div className='mx-auto w-[90%] md:w-[40%] px-6 py-8 bg-white rounded-2xl drop-shadow-2xl'>
             <form action={postData} onSubmit={() => setIsSubmit(true)} className='text-slate-700'>
-            <h3 className='flex flex-col justify-center items-center gap-2 font-bold text-center text-[2rem] leading-none mb-[2rem]'>
-                <IoSchoolSharp className='text-[3rem]' /> My School
+            <h3 className='flex flex-col justify-center items-center gap-1 text-center leading-none mb-[2rem]'>
+                <span className='text-red-600 text-[4rem] font-bold'>RDC</span>
+                <span className='text-[2rem] font-light'>Receipting</span>
+                <span className='text-blue-600 font-extrabold text-[3rem]'>App</span>
             </h3>
             <hr className='mx-auto mb-4 w-[60%]' />
             <h4 className='text-center text-[1.8rem] leading-none mb-[1rem]'>
