@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+  .link__second{
+    @apply text-white rounded-2xl transition-all ease-in-out duration-200 bg-gradient-to-br from-blue-500 to-pink-600 hover:bg-gradient-to-br hover:from-blue-500 hover:to-pink-700 hover:drop-shadow-lg;
+  }
+}
+
+
+
+/* SCROLL BAR WIDTH & COLOR */
+.scroll__width::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  .scroll__width::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .scroll__width::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    outline: 1px solid slategrey;
+  }
